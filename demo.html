@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <!-- <link rel="stylesheet" type="text/css" href="icons/css/all.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/nstyles.css">
+    <title>ANPR- Automatic Number plate recognition</title>
+    
+</head>
+
+<body style=" background-color: ; ">
+<nav class="navbar navbar-light navbar-expand-md  shadow">
+                    <div class="container-fluid ">
+                  
+                                                <a class="navbar-brand logo" href="/"><img  src='./assets/images/logo.png' height="40"  alt='logo' /> <span class="d-none d-md-inline-block poppins font-weight-bold" style="color: #1884c6;" >ANPR</span> </a>
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                        <div id="Navbar" class="collapse navbar-collapse justify-content-between text-center">
+                            <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb  raleway " href="./">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb  raleway " href="./dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb  raleway "  href="#">About</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb  raleway "  href="#">Contact</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link onhover-bb raleway " href="#">FAQs</a>
+                            </li>
+                            </ul>
+                                            <ul class="navbar-nav navbar-right">  
+                     <li class="nav-item active"><a data-toggle="modal" data-target="#roleModal" class="raleway btn btn-dark rounded-pill" id="loginTrigger" href="#">Get Started <i class="fa fa-arrow-circle-right"></i></a></li>
+                   </ul>
+
+                
+                        </div>
+                    
+                    </div>
+                
+                </nav>
+
+
+<div class="container ">
+<div class="row row-content py-0 pb-4 shadow justify-content-center">
+  <div class="col-12 m-0 p-0  top-border"></div>
+<div class="col-12 col-md-8 mt-4 text-center">
+  <h2 class="text-center poppins font-weight-bold mb-2">Recogition by <span class="text-orange"> Image <i class="fa fa-image"></i></span></h2>
+  <form class="image-form" action="output.html" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <div class="preview-zone hidden">
+              <div class="box box-solid">
+                <div class="box-header ">
+                 <p class="montserrat ">Upload a vehicle image to recognize its number plate.</p>
+                  <div class="box-tools pull-right">
+                    <button type="button" class="btn close btn-xs remove-preview d-none">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="box-body text-center p-1 d-none"></div>
+              </div>
+            </div>
+            <div class="dropzone-wrapper">
+              <div class="dropzone-desc">
+                <i class="fa fa-upload"></i>
+                <p>Choose an image file or drag it here.</p>
+              </div>
+              <input required="" type="file" name="img_logo" class="dropzone form-control">
+            </div>
+          </div>
+       
+ <button type="submit" class="btn btn-dark rounded-pill submit-btn">Upload & Recognize</button>
+              
+  </form>
+   <div id="status" class="circle-loader d-none my-3 ">
+        <div class="checkmark draw"></div>
+ </div>
+</div>
+ 
+
+</body>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/7051507f83.js"></script>
+<script src="js/demoscripts.js"></script>
+
+</html>
