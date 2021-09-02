@@ -29,6 +29,21 @@ $('.image-btn').click(function() {
   $('#imageModal').modal();
   // alert($(this).attr('img'));
 });
+$('.video-btn').click(function() {
+  var src="./assets/"+$(this).attr('vid');
+  var ft=$(this).attr('ft');
+  // $('#output-video source').attr('src',src);
+  // $('#output-video').load();
+var video = document.getElementById('output-video');
+var source = document.getElementById('ov-source');
+source.setAttribute('src',src);
+video.load();
+var currentTime = video.currentTime;
+video.currentTime = parseFloat(ft);
+console.log(video.currentTime);
+  $('#videoModal').modal();
+});
+
 function reset(e) {
   $('.remove-preview').addClass('d-none');
   e.wrap('<form>').closest('form').get(0).reset();
